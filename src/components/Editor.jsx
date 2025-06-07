@@ -13,7 +13,7 @@ function Editor() {
                 <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} />
             </button>
         </header>
-        <input type='text'/>
+        <textarea id="editor"></textarea>
     </div>
   )
 }

@@ -1,8 +1,12 @@
 import Editor from './components/Editor'
+import Visualizador from './components/Visualizador'
 
 function App() {
   return (
-    <Editor />
+    <div>
+      <Editor />
+      <Visualizador />
+    </div>
   )
 }
 
