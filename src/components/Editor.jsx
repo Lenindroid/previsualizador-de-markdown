@@ -5,16 +5,18 @@ import { faMarkdown } from '@fortawesome/free-brands-svg-icons'
 
 function Editor() {
   return (
-    <div>
+    <section className="main-part">
         <header>
-            <FontAwesomeIcon icon={faMarkdown} />
-            <h2>Editor</h2>
+            <div>
+              <FontAwesomeIcon icon={faMarkdown} />
+              <h2>Editor</h2>
+            </div>
             <button>
                 <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} />
             </button>
         </header>
         <textarea id="editor"></textarea>
-    </div>
+    </section>
   )
 }
 

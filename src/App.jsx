@@ -3,7 +3,7 @@ import Visualizador from './components/Visualizador'
 
 function App() {
   return (
-    <div>
+    <div className="useless-div">
       <Editor />
       <Visualizador />
     </div>

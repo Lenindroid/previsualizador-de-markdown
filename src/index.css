@@ -1,0 +1,15 @@
+.useless-div {
+    display: flex;
+    justify-content: center;
+}
+
+.main-part {
+    width: 50%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

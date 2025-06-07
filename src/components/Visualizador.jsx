@@ -5,16 +5,18 @@ import { faMarkdown } from '@fortawesome/free-brands-svg-icons'
 
 function Visualizador() {
   return (
-    <div>
+    <section className="main-part">
       <header>
-        <FontAwesomeIcon icon={faMarkdown} />
-        <h2>Previsualización</h2>
+        <div>
+          <FontAwesomeIcon icon={faMarkdown} />
+          <h2>Previsualización</h2>
+        </div>
         <button>
             <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} />
         </button>
       </header>
       <section id="preview"></section>
-    </div>
+    </section>
   )
 }
 
