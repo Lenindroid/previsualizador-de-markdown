@@ -16,7 +16,7 @@ function Visualizador(props) {
             <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} className="button-icons"/>
         </button>
       </header>
-      <section id="preview">
+      <section id="preview" className="previewer">
         <ReactMarkdown>
           {props.markdown}
         </ReactMarkdown>
