@@ -7,12 +7,12 @@ function Visualizador() {
   return (
     <section className="main-part">
       <header>
-        <div>
+        <div className="lenguaje">
           <FontAwesomeIcon icon={faMarkdown} />
           <h2>Previsualización</h2>
         </div>
         <button>
-            <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} />
+            <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} className="button-icons"/>
         </button>
       </header>
       <section id="preview"></section>

@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
 .useless-div {
     display: flex;
     justify-content: center;
@@ -7,9 +13,56 @@
     width: 50%;
 }
 
+.editor {
+    background-color: #181818;
+    color: #fff;
+    width: 50vw;
+    height: 100vh;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    background-color: #181818;
+    color: #fff;
+    padding: 1rem;
+}
+
+.lenguaje {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.button-icons {
+    color: #fff;
+}
+
+.button-icons:hover {
+    color: #b5b5b5;
+}
+
+.button-icons:active {
+    color: #3d3d3d;
+}
+
+textarea {
+    height: 90%;
+    width: 90%;
+    background-color: transparent;
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1rem;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
 }
