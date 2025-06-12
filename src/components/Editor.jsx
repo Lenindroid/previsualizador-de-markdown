@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons'
 import { faMarkdown } from '@fortawesome/free-brands-svg-icons'
 
-function Editor() {
+function Editor({ markdownActualizar }) {
+
+  function actualizarMarkdown (e) {
+    markdownActualizar(e.target.value);
+  }
+
   return (
     <section className="main-part editor">
         <header>
@@ -15,7 +20,7 @@ function Editor() {
                 <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} className="button-icons"/>
             </button>
         </header>
-        <textarea id="editor"></textarea>
+        <textarea id="editor" onChange={actualizarMarkdown}></textarea>
     </section>
   )
 }

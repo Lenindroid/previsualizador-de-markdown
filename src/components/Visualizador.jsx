@@ -2,8 +2,9 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons'
 import { faMarkdown } from '@fortawesome/free-brands-svg-icons'
+import ReactMarkdown from 'react-markdown'
 
-function Visualizador() {
+function Visualizador(props) {
   return (
     <section className="main-part">
       <header>
@@ -15,7 +16,11 @@ function Visualizador() {
             <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} className="button-icons"/>
         </button>
       </header>
-      <section id="preview"></section>
+      <section id="preview">
+        <ReactMarkdown>
+          {props.markdown}
+        </ReactMarkdown>
+      </section>
     </section>
   )
 }
