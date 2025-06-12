@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons'
+import { faUpRightAndDownLeftFromCenter, faMaximize } from '@fortawesome/free-solid-svg-icons'
 import { faMarkdown } from '@fortawesome/free-brands-svg-icons'
 import ReactMarkdown from 'react-markdown'
 
@@ -13,7 +13,7 @@ function Visualizador(props) {
           <h2>Previsualización</h2>
         </div>
         <button>
-            <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} className="button-icons"/>
+            <FontAwesomeIcon icon={faMaximize} className="button-icons"/>
         </button>
       </header>
       <section id="preview" className="previewer">
