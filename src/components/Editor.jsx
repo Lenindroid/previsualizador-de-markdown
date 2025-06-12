@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons'
 import { faMarkdown } from '@fortawesome/free-brands-svg-icons'
 
-function Editor({ markdownActualizar }) {
+function Editor({ markdownActualizar, md }) {
 
   function actualizarMarkdown (e) {
     markdownActualizar(e.target.value);
@@ -20,7 +20,7 @@ function Editor({ markdownActualizar }) {
                 <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} className="button-icons"/>
             </button>
         </header>
-        <textarea id="editor" onChange={actualizarMarkdown}></textarea>
+        <textarea id="editor" onChange={actualizarMarkdown} value={md}></textarea>
     </section>
   )
 }
