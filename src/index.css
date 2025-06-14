@@ -11,6 +11,7 @@ body {
 .useless-div {
     display: flex;
     justify-content: center;
+    background-color: #61615e;
 }
 
 .main-part {
@@ -79,4 +80,8 @@ textarea {
 
 textarea:focus {
     outline: none;
+}
+
+.hidden {
+    display: none;
 }

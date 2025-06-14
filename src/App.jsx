@@ -3,6 +3,8 @@ import Editor from './components/Editor'
 import Visualizador from './components/Visualizador'
 
 function App() {
+  const [hiddenEditor, setHiddenEditor] = useState(false);
+  const [hiddenPreview, setHiddenPreview] = useState(false);
   const [markdown, setMarkdown] = useState(`
 # Heading Level 1
 
@@ -29,8 +31,8 @@ function greet(name) {
 `);
   return (
     <div className="useless-div">
-      <Editor markdownActualizar={setMarkdown} md={markdown}/>
-      <Visualizador markdown={markdown}/>
+      <Editor markdownActualizar={setMarkdown} md={markdown} className={hiddenEditor ? 'hidden': ''} hide={setHiddenPreview}/>
+      <Visualizador markdown={markdown} className={hiddenPreview ? 'hidden': ''} hide={setHiddenEditor}/>
     </div>
   )
 }
